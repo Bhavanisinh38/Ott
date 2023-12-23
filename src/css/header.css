@@ -1,0 +1,322 @@
+.custom-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 101;
+    padding: 0 15px;
+    background-image: linear-gradient(180deg, var(--black) 60%, transparent 100%);
+    transition: 0.3s ease-in-out;
+}
+
+.custom-header.active{
+    transform: translateY(-100%);
+}
+
+.ch-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    min-height: 70px;
+}
+
+.ch-inner .ch-right,
+.ch-inner .ch-left{
+    display: flex;
+    align-items: center;
+}
+
+.ch-inner .ch-right{
+    justify-content: flex-end;
+}
+
+
+/* --- Logo Css Start --- */
+.ch-logo{
+    cursor: pointer;
+}
+
+.ch-logo img{
+    width: 120px;
+    height: 31.45px;
+    display: block;
+    position: relative;
+    top: -2px;
+}
+/* --- Logo Css End --- */
+
+/* --- Aside Menu Icon Start --- */
+.menu-icon-bx {
+    width: 25px;
+    height: 24px;
+    flex: 0 0 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-icon-bx span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 100px;
+    opacity: 0.7;
+    background-color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.menu-icon-bx:hover span,
+.menu-icon-bx.active span{
+    opacity: 1;
+}
+
+.menu-icon-bx.active span:nth-child(1) {
+    width: 50%;
+    margin-left: auto;
+}
+
+.menu-icon-bx.active span:nth-child(2) {
+    width: 90%;
+}
+
+.menu-icon-bx.active span:nth-child(3) {
+    width: 50%;
+    margin-right: auto;
+}
+/* --- Aside Menu Icon End --- */
+
+/* --- Menu Links Start --- */
+.ch-menu-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.ch-menu-bx .cmb-item{
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-right: 5px;
+    padding: 8px 14px 8px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.ch-menu-bx .cmb-item:last-child{
+    margin-right: 0px;
+}
+
+.ch-menu-bx .cmb-item.cmb-home-item{
+    padding: 0;
+}
+
+.ch-menu-bx .cmb-item.cmb-home-item svg{
+    position: relative;
+    top: -1px;
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.ch-menu-bx .cmb-item .fa{
+    margin-left: 7px;
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+    transition: 0.3s ease;
+}
+
+.cmb-drop-item:hover .cmb-item .fa,
+.ch-menu-bx .cmb-item:hover .fa{
+    transform: rotate(180deg);
+}
+
+.cmb-drop-item:hover .cmb-item,
+.ch-menu-bx .cmb-item:hover{
+    color: var(--color2);
+    /* background-color: var(--color13); */
+    cursor: pointer;
+}
+
+.cmb-drop-item{
+    position: relative;
+    border-radius: 50px;
+}
+
+.cmb-drop-item .cmb-drop-bx{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    padding-top: 50px;
+    visibility: hidden;
+}
+
+.cmb-drop-item:hover .cmb-drop-bx{
+    visibility: visible;
+}
+
+.cmb-drop-item .cmb-drop-bx .cmb-drop-inner{
+    padding: 10px;
+    border-radius: 12px;
+    background-clip: padding-box;
+    background-color: var(--color10-800);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: 0.09s ease-in-out;
+    box-shadow: 0 0 10px var(--black-700);
+    border: 1px solid var(--color10);
+}
+
+.cmb-drop-item:hover .cmb-drop-bx .cmb-drop-inner{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.cdi-main{
+    width: 120px;
+}
+
+.cdi-main .cdi-main-item{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: var(--color3);
+    margin-top: 8px;
+    height: 30px;
+    transition: 0.3s ease;
+}
+
+.cdi-main .cdi-main-item:first-child{
+    margin-top: 0;
+}
+
+.cdi-main .cdi-main-item:hover{
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.cdi-main .cdi-main-item.active{
+    color: var(--color2);
+    cursor: pointer;
+}
+/* --- Menu Links End --- */
+
+
+/* --- Other btn bx Start --- */
+.other-btn-bx{
+    display: flex;
+}
+
+.other-btn-bx .obb-btn{
+    width: 37px;
+    height: 37px;
+    padding: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.other-btn-bx .obb-btn:hover{
+    background-color: var(--color2);
+}
+
+.other-btn-bx .obb-btn:first-child{
+    margin-left: 0px;
+}
+
+.other-btn-bx .obb-btn svg{
+    position: relative;
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* --- Other btn bx End --- */
+
+
+/* --- Signinup Btn Bx Start --- */
+.signinup-btn-bx{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 8px;
+}
+
+.signinup-btn-bx .sip-btn{
+    border: 1px solid var(--white-300);
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.signinup-btn-bx .sip-btn.sip-account-btn{
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.signinup-btn-bx .sip-btn img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0.5px;
+    border-radius: 50px;
+    margin-right: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.signinup-btn-bx .sip-btn:hover{
+    border-color: var(--color2);
+    background-color: var(--color2);
+    color: var(--white);
+    cursor: pointer;
+}
+/* --- Signinup Btn Bx End --- */
+
+
+/* --- @media Css Start --- */
+@media screen and (max-width:1024px) {
+    /* .menu-icon-bx{
+        display: inline-flex;
+    } */
+
+    .ch-menu-bx{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .custom-header{
+        position: sticky;
+    }
+}
+/* --- @media Css End --- */

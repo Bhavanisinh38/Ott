@@ -1,0 +1,226 @@
+/*  */
+.mainbannerslider{
+    margin-bottom: -90px;
+}
+
+.mainbanneritem-link{
+    display: block;
+    position: relative;
+}
+
+.mainbanneritem-link::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, var(--color1), var(--black-300));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*  */
+.mbi-video-img-bx{
+    position: relative;
+    padding-top: 46%;
+}
+
+.mbi-video-img-bx .mbi-video,
+.mbi-video-img-bx .mbi-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+/*  */
+.mbi-data-bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    padding: 10px 50px;
+    padding-bottom: 130px;
+    z-index: 1;
+}
+
+.mbi-data-bx .mbi-name-img{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.mbi-data-bx .mbi-name{
+    display: none;
+    font-weight: 600;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mbi-data-bx .mbi-tags{
+    color:var(--golden);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.mbi-data-bx .mbi-desc{
+    font-size: 16px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.mbi-data-bx .mbi-btns{
+    display: flex;
+}
+
+.mbi-data-bx .mbi-btns .mbi-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    padding: 8px 15px 8px 10px;
+    backdrop-filter: blur(5px);
+    background: var(--black-300);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mbi-data-bx .mbi-btns .mbi-btn svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
+}
+
+.mbi-data-bx .mbi-btns .mbi-btn.mbi-play-btn{
+    background-image: linear-gradient(45deg, #059ece, #0567cd);
+}
+
+.mbi-data-bx .mbi-btns .mbi-btn:hover{
+    transform: scale(1.05);
+}
+
+.mbi-data-bx > *{
+    opacity: 0;
+    /* transform: translateY(-10px); */
+    transition: all 0.3s ease-in-out;
+}
+
+.mainbannerslider .slick-current .mainbanneritem-link .mbi-data-bx > *{
+    opacity: 1;
+    /* transform: translateY(0px); */
+    transition: all 0.3s 0.3s ease-in-out;
+}
+
+
+
+
+/*  */
+.mainbannerslider .slick-dots{
+    bottom:70px;
+}
+
+.mainbannerslider .slick-arrow{
+    height: 40px;
+    height: 40px;
+    background-color: var(--black-500);
+}
+
+.mainbannerslider .slick-arrow.slick-next {
+    position: absolute;
+    right: 15px;
+    top: inherit;
+    transform: inherit;
+    bottom: 130px;
+}
+
+.mainbannerslider .slick-arrow.slick-prev {
+    position: absolute;
+    left: inherit;
+    top: inherit;
+    transform: inherit;
+    right: 60px;
+    bottom: 130px;
+}
+
+
+@media screen and (max-width:992px) {
+    .mainbannerslider{
+        margin-bottom: 0px;
+    }
+
+    .mainbanneritem-link::after{
+        height: auto;
+        padding-top: 56%;
+    }
+
+    .mbi-video-img-bx{
+        padding-top: 56%;
+    }
+
+    .mbi-data-bx{
+        position: relative;
+        padding: 10px;
+        padding-right: 65px;
+        padding-bottom: 30px;
+    }
+
+    .mbi-data-bx .mbi-desc,
+    .mbi-data-bx .mbi-btns .mbi-btn.mbi-play-btn span,
+    .mbi-data-bx .mbi-btns .mbi-btn,
+    .mbi-data-bx .mbi-name-img{
+        display: none;
+    }
+
+    .mbi-data-bx .mbi-name{
+        display: block;
+    }
+
+    .mbi-data-bx .mbi-btns .mbi-btn.mbi-play-btn{
+        display: flex;
+        padding: 10px;
+        border-radius: 50px;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .mbi-data-bx .mbi-btns .mbi-btn.mbi-play-btn svg{
+        margin: 0;
+        left: 1px;
+        position: relative;
+    }
+    
+    .mainbannerslider .slick-dots{
+        bottom: 10px;
+        justify-content: flex-start;
+    }
+
+    .mainbannerslider .slick-arrow{
+        width: 35px;
+        height: 35px;
+    }
+
+    .mainbannerslider .slick-arrow.slick-next,
+    .mainbannerslider .slick-arrow.slick-prev{
+        bottom: 110px;
+    }
+}

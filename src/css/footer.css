@@ -1,0 +1,244 @@
+/* --- Footer Css --- */
+
+footer{
+    background-color: var(--color10);
+    position: relative;
+    z-index: 1;
+}
+
+footer::before{
+    background-image: linear-gradient(180deg, var(--color10) -11%, var(--color2-900) 100%);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    opacity: .1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.container-lg.cl-footer{
+    max-width: 1920px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-item-box{
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer-heading-top{
+    color: var(--color3);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+/* --- Footer logo Css --- */
+.footer-logo img{
+    width: 150px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* --- Footer Heading Css --- */
+.footer-heading{
+    color: var(--color3);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.footer-sub-heading{
+    color: var(--color4);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* --- Footer btn Css --- */
+.footer-btn{
+    display: inline-grid;
+    padding: 0px 15px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 400;
+    color: var(--color3);
+    border: 0.5px solid var(--color3);
+    box-shadow: 0 0 1px 0px var(--color3);
+    transition: 0.3s ease-in-out;
+}
+
+.footer-btn:hover{
+    color: var(--white);
+    box-shadow: 0 0 1px 0px var(--color2);
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+
+/* --- Footer Newsletter Css --- */
+.newsletter-group{
+    display: flex;
+}
+
+.newsletter-group button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    margin-left: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color3);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color2);
+    transition: all 0.3s ease-in-out;
+}
+
+.newsletter-group button[disabled] {
+    opacity: 0.7;
+}
+
+.newsletter-group button:hover {
+    color: var(--white);
+}
+
+/* --- footer Links Css --- */
+.footer-links-bx{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-links-bx .footer-link{
+    position: relative;
+    color: var(--color4);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+/* .footer-links-bx .footer-link::after{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: var(--color11);
+}
+
+.footer-links-bx .footer-link:last-child::after {
+    content: none;
+} */
+
+.footer-links-bx .footer-link:hover {
+    color: var(--white);
+}
+
+.footer-links-bx .footer-link.active {
+    color: var(--color8);
+}
+
+/* --- Footer copyright & mede-with section Css --- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+.copyright {
+    color: var(--color4);
+    font-size: 14px;
+}
+
+.mede-with {
+    color: var(--color4);
+    font-size: 14px;
+    margin: 0;
+}
+
+.mede-with a {
+    color: var(--white);
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.mede-with:hover a,
+.mede-with a:hover {
+    opacity: 1;
+}
+
+.icons-box-made {
+    width: 20px;
+    height: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3px;
+}
+
+.icons-box-made .fa{
+    position: absolute;
+}
+
+.mede-with .fa:nth-child(1) {
+    color: var(--white);
+    font-size: 12px;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.mede-with .fa:nth-child(2) {
+    color: var(--white);
+    font-size: 12px;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.mede-with:hover .fa:nth-child(1) {
+    opacity: 0;
+}
+
+.mede-with:hover .fa:nth-child(2) {
+    opacity: 1;
+    color: var(--error);
+    transform: scale(1);
+}
+
+
+@media screen and (max-width:576px) {
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copyright {
+        margin-bottom: 10px;
+    }
+}
+
+/* --- End Footer Css --- */

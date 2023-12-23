@@ -1,0 +1,113 @@
+/* --- card Item --- */
+.card-item{
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.card-item .card-img-bx{
+    position: relative;
+    padding-top: 150%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-bottom: 5px; */
+}
+
+.card-item .card-img-bx .card-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-item .card-img-bx:hover .card-img{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-item .card-details-bx{
+    position: absolute;
+    bottom: 0;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    background-image: linear-gradient(to bottom, transparent, var(--black-800) 65%,  var(--black));
+    display: none;
+}
+
+.card-item .card-details-bx .cdb-name-other{
+   font-size: 14px;
+   font-weight: 300;
+}
+
+
+/* --- List Type slider --- */
+.Listitemslider .slick-track{
+    margin: 0;
+}
+
+.Listitemslider .slick-track .slick-slide{
+    padding: 0 5px;
+}
+
+
+/* --- List Type Row --- */
+.listitems-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listitems-row .card-outer-bx{
+    padding: 5px;
+    width: 16.66%;
+    flex: 0 0 auto;
+}
+
+
+/* --- Card Design two -- */
+.Listitemslider.ci-two .card-item .card-img-bx,
+.listitems-row.ci-two .card-outer-bx .card-item .card-img-bx{
+    padding-top: 60%;
+}
+
+.Listitemslider.ci-two .card-item .card-details-bx{
+    display: block;
+}
+
+/* --- --- */
+
+.Listitemslider.ci-two .slick-arrow{
+    height: 40px;
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .listitems-row .card-outer-bx{
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .listitems-row .card-outer-bx{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .listitems-row .card-outer-bx{
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .listitems-row .card-outer-bx{
+        width: 50%;
+    }
+}
