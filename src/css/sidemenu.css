@@ -12,7 +12,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease-in-out;
-    box-shadow: -3px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px 0px 3px var(--black-200);
 }
 
 .side-menu-bx.active {
@@ -230,7 +230,7 @@
 }
 
 .smb-footer .smb-login{
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--white-300);
     padding: 8px 18px;
     font-size: 14px;
     font-weight: 500;

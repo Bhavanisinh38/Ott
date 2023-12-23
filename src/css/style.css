@@ -27,11 +27,41 @@ a,a:hover{
     --black-100: rgba(0, 0, 0, 0.1);
 
     --white: rgb(255, 255, 255);
+    --white-800: rgba(255, 255, 255, 0.8);
     --white-300: rgba(255, 255, 255, 0.3);
 
     --golden: rgb(225, 185, 123);
+    --golden-900: rgba(255, 185, 123, 0.9);
+    --golden-800: rgba(255, 185, 123, 0.8);
+    --golden-700: rgba(255, 185, 123, 0.7);
+    --golden-600: rgba(255, 185, 123, 0.6);
+    --golden-500: rgba(255, 185, 123, 0.5);
+    --golden-400: rgba(255, 185, 123, 0.4);
+    --golden-300: rgba(255, 185, 123, 0.3);
+    --golden-200: rgba(255, 185, 123, 0.2);
+    --golden-100: rgba(255, 185, 123, 0.1);
 
-    --error: rgb(250, 130, 106);
+    --red: rgb(250, 130, 106);
+    --red-900: rgb(250 130 106 / 90%);
+    --red-800: rgb(250 130 106 / 80%);
+    --red-700: rgb(250 130 106 / 70%);
+    --red-600: rgb(250 130 106 / 60%);
+    --red-500: rgb(250 130 106 / 50%);
+    --red-400: rgb(250 130 106 / 40%);
+    --red-300: rgb(250 130 106 / 30%);
+    --red-200: rgb(250 130 106 / 20%);
+    --red-100: rgb(250 130 106 / 10%);
+
+    --green: rgb(34, 197, 94);
+    --green-900: rgb(34 197 94 / 90%);
+    --green-800: rgb(34 197 94 / 80%);
+    --green-700: rgb(34 197 94 / 70%);
+    --green-600: rgb(34 197 94 / 60%);
+    --green-500: rgb(34 197 94 / 50%);
+    --green-400: rgb(34 197 94 / 40%);
+    --green-300: rgb(34 197 94 / 30%);
+    --green-200: rgb(34 197 94 / 20%);
+    --green-100: rgb(34 197 94 / 10%);
 
     --color1: rgb(18, 17, 20);
     --color1-900: rgba(18, 17, 20, 0.9);
@@ -77,13 +107,14 @@ a,a:hover{
     --color4-200: rgba(191, 186, 196, 0.2);
     --color4-100: rgba(191, 186, 196, 0.1);
 
-    --color5: #9401d8;
-    --color6: #d418a0;
-    --color7: #ec3a7c;
-    --color8: #ff942d;
-    --color9: #ffcc00;
+    --color5: rgb(148, 1, 216);
+    --color6: rgb(212, 24, 160);
+    --color7: rgb(236, 58, 124);
+    --color8: rgb(255, 148, 45);
+    --color9: rgb(255, 204, 0);
 
     --color10: rgb(32, 30, 35);
+    --color10-500: rgba(32, 30, 35, 0.5);
     --color10-800: rgba(32, 30, 35, 0.8);
 
     --color11: rgb(48, 45, 52);
@@ -466,7 +497,7 @@ body{
     outline: none;
     cursor: pointer;
     margin:0 5px;
-    background-color: rgba(242, 241, 243, 0.08);
+    background-color: rgba(242, 241, 243, 0.078);
     transition: all 0.3s ease-in-out;
 }
 
@@ -485,12 +516,12 @@ body{
 
 .custom-modal-btn .cmb-btn.yes:hover{
     color: var(--white);
-    background-color: #c70000;
+    background-color: var(--red);
 }
 
 .custom-modal-btn .cmb-btn.no:hover{
     color: var(--white);
-    background-color: #28a745;
+    background-color: var(--green);
 }
 
 
@@ -520,7 +551,7 @@ body{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: #0000004d;
+    background: var(--black-300);
     opacity: 0;
     visibility: hidden;
     transition:all 0.3s ease-in-out;
@@ -841,7 +872,7 @@ body{
     width: 40px;
     height: 100px;
     border: none;
-    background-color: rgb(0 0 0 / 80%);
+    background-color:  var(--black-800);
     border-radius: 5px;
     font-size: 24px;
     display: inline-flex !important;
@@ -849,7 +880,7 @@ body{
     align-items: center;
     transition: all 0.3s ease-in-out;
     opacity: 0.9;
-    box-shadow: 0 0 50px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 50px var(--black-200);
     margin: 0;
     padding: 5px;
     overflow: hidden;
@@ -970,8 +1001,8 @@ body{
     .slick-arrow{
         width: 35px;
         height: 35px;
-        background-color: rgb(0 0 0 / 30%) ;
-        border: 1px solid #fcfcfc;
+        background-color: var(--black-300) ;
+        border: 1px solid var(--color4);
         border-radius: 50%;
     }
 
@@ -1090,34 +1121,6 @@ body{
     }
 }
 /* --- Close Btn Css End --- */
-
-
-/* --- custom-table --- */
-.custom-table{
-    width: 100%;
-    border-collapse: separate;
-}
-
-.custom-table thead th{
-    padding: 10px 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--color4);
-    border-bottom: 1px solid var(--color11);
-}
-
-.custom-table tbody td{
-    padding: 10px 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--color3);
-    border-bottom: 1px solid var(--color11);
-}
-
-.custom-table tbody tr:last-child td{
-    border-bottom: none;
-}
-
 
 
 
@@ -1302,7 +1305,114 @@ body{
 
 
 
+/* --- Common Table Css Start --- */
+.custom-table-responsive{
+    overflow: hidden;
+    overflow-x: auto;
+    border-radius: 10px;
+    background-color: var(--color10);
+}
 
+.ctr-scrollbar::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+.ctr-scrollbar::-webkit-scrollbar-track{
+    border-radius: 50px;
+    background-color: var(--color7);
+}
+
+.ctr-scrollbar::-webkit-scrollbar-thumb{
+    background-color: var(--white-800);
+    border-radius: 50px;
+}
+
+.custom-table{
+    width: 100%;
+}
+
+.custom-table thead{
+    background-image: linear-gradient(-45deg, var(--color7), var(--color5));
+    color: white;
+}
+
+.custom-table thead th{
+    padding: 5px 15px;
+    font-weight: 400;
+}
+
+.custom-table tbody td{
+    padding: 10px 15px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.custom-table tbody tr{
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color11);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-table tbody tr:hover{
+    background-color: var(--color1-300);
+}
+
+.custom-table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.ct-data-outer{
+    display: flex;
+}
+
+.ct-data-outer svg{
+    width: 45px;
+    height: 45px;
+    object-position: center;
+    object-fit: contain;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50px;
+    background: var(--color1-300);
+    border: 1px solid var(--color11);
+}
+
+.ct-data-bx .ct-amount,
+.ct-data-bx .ct-lable{
+    color: var(--color3);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ct-data-bx .ct-amount-lable,
+.ct-data-bx .ct-date{
+    color: var(--color14);
+    font-size: 14px;
+}
+
+.ct-data-bx .ct-amount,
+.ct-data-bx .ct-amount-lable{
+    text-align: right;
+    white-space: nowrap;
+}
+
+.ct-data-bx.ct-added .ct-amount-lable,
+.ct-data-bx.ct-less .ct-amount-lable{
+    color: var(--white);
+}
+
+.custom-table tbody tr.lost-game,
+.ct-data-bx.ct-less .ct-amount{
+    color: var(--red);
+}
+
+.custom-table tbody tr.win-game,
+.ct-data-bx.ct-added .ct-amount{
+    color: var(--green);
+}
+/* --- Common Table Css End --- */
 
 
 

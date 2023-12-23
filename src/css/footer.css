@@ -225,7 +225,7 @@ footer::before{
 
 .mede-with:hover .fa:nth-child(2) {
     opacity: 1;
-    color: var(--error);
+    color: var(--red);
     transform: scale(1);
 }
 

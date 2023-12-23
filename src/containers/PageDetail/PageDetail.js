@@ -14,6 +14,10 @@ import Listitem from '../Sections/Listitem';
 export default function PageDetail() {
   return (
     <>
+      <Helmet>
+        <title>Detail | Adstar</title>
+      </Helmet>
+
       {/* Main Video Player */}
       <Mainvideoplayer mainvideosrc={Img.demo_video} mainposter={Img.demobig_img1}/>
     

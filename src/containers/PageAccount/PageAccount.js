@@ -53,7 +53,7 @@ export default function PageAccount() {
                 
                     <div className="row pt-1 pt-lg-3">
 
-                        {/* <div className="col-12">
+                        <div className="col-12">
                             <div className="signinup-group">
                                 <label className="group__label">Gender</label>
                                 <div className="signinup-group-radio">
@@ -63,7 +63,7 @@ export default function PageAccount() {
                                     <label htmlFor="female">Female</label>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
                         <div className="col-6 pe-2">
                             <div className="signinup-group">
@@ -113,6 +113,13 @@ export default function PageAccount() {
                                 <span className="clear-input-icon" hidden={isbodShow} onClick={handlebodClear}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
                                 </span>
+                            </div>
+                        </div>
+
+                        <div className="col-12">
+                            <div className="signinup-group-checkmark">
+                                <input className="d-none" type="checkbox" id="checkmark"/>
+                                <label className="checkmark-lable" htmlFor="checkmark"><span className="checkmark-icon"></span>Remember me</label>
                             </div>
                         </div>
                         

@@ -20,7 +20,7 @@ input[type=number] {
 
 .signinup-group {
     position: relative;
-    margin: 0px 0 10px;
+    margin: 0px 0 15px;
 }
 
 .signinup-group select,
@@ -131,7 +131,7 @@ input[type=number] {
     transform: rotate(45deg);
     position: absolute;
     right: 14px;
-    top: 40px;
+    top: 38px;
     pointer-events: none;
 }
 
@@ -187,7 +187,7 @@ input[type=number] {
 }
 
 .signinup-group-radio label:hover {
-    background-color: rgb(37, 26, 51);
+    background-color: var(--color2-200);
     color: var(--white);
     border-color: var(--color2);
 }
@@ -240,10 +240,10 @@ input[type=number] {
 /* --- clear-input-icon --- */
 .clear-input-icon{
     position: absolute;
-    right: 2px;
-    top: 28px;
+    right: 0px;
+    top: 23px;
+    height: 46px;
     width: 40px;
-    height: 40px;
     transition: 0.3s ease-in-out;
     padding: 6px;
     cursor: pointer;
@@ -254,7 +254,7 @@ input[type=number] {
 }
 
 .clear-input-icon:hover{
-    color: var(--error);
+    color: var(--red);
 }
 
 .clear-input-icon svg{
@@ -268,19 +268,19 @@ Error Input color css
 .signinup-group.error-group textarea,
 .signinup-group.error-group select,
 .signinup-group.error-group input{
-    border-color: var(--error);
-    box-shadow: 0 0 1px 1px var(--error);
+    border-color: var(--red);
+    box-shadow: 0 0 1px 1px var(--red);
 }
 
 .signinup-group.error-group .group__label{
-    color: var(--error) !important;
+    color: var(--red) !important;
 }
 
 /* Form Error Msg */
 .form-error-msg{
     display: block;
     text-align: right;
-    color: var(--error);
+    color: var(--red);
     font-size: 14px;
     margin-bottom: -10px;
     margin-top: 5px;
@@ -298,30 +298,32 @@ Error Input color css
 
 /* --- Remember Input Checkbox --- */
 .signinup-group-checkmark{
-    margin: 15px 0 20px;
+    margin: 10px 0 10px;
     width: fit-content;
 }
 
 .signinup-group-checkmark label{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color3);
     font-weight: 400;
     margin: 0;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .signinup-group-checkmark label .checkmark-icon{
-    width: 25px;
-    height: 25px;
-    flex: 0 0 25px;
+    position: relative;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
     border-radius: 5px;
     margin-right: 8px;
     background-color: transparent;
     background-position: center;
-    box-shadow: 0 0 0px 4px rgb(63 59 69 / 0%) inset;
+    /* box-shadow: 0 0 0px 4px var(--color10) inset; */
     border: 2px solid var(--color11);
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -340,8 +342,8 @@ Error Input color css
     border-color: var(--color2);
     background-color: var(--color2);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
+    background-position: center center;
+    background-size: contain;
     box-shadow: none;
 }
 
@@ -355,7 +357,7 @@ Error Input color css
     width: 100%;
     min-height: 100px;
     border-radius: 16px;
-    background-color: rgba(32, 30, 35, 0.5);
+    background-color: var(--color10);
     border: 1px solid var(--color11);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -410,8 +412,8 @@ Error Input color css
     font-size: 16px;
     margin-top: 15px;
     border-radius: 12px;
-    box-shadow: 0 0 10px #00000070;
-    background-color: rgba(32, 30, 35, 0.5);
+    box-shadow: 0 0 10px var(--black-700);
+    background-color: var(--color10);
     border: 1px solid var(--color11);
     list-style-position: inside;
     padding-right: 100px;
@@ -428,7 +430,7 @@ Error Input color css
     object-fit: contain;
     object-position: center;
     background: var(--color1);
-    box-shadow: 0 0 10px 0px #00000070 inset;
+    box-shadow: 0 0 10px 0px var(--black-700) inset;
 }
 
 .fileupload-list .fileupload-item.filstn{
@@ -446,7 +448,7 @@ Error Input color css
 }
 
 .dataupload-list .dataupload-item .dui-item span{
-    color: rgb(129, 122, 138);
+    color: var(--color4);
     font-size: 14px;
     margin-left: 2px;
     font-weight: 500;
@@ -473,7 +475,7 @@ Error Input color css
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--black-700);
     backdrop-filter: blur(5px);
 }
 
@@ -488,7 +490,7 @@ Error Input color css
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--black-700);
     backdrop-filter: blur(5px);
 }
 
