@@ -11,6 +11,9 @@ import Header from "../components/Header/Header";
 // Home Page
 import PageHome from "../containers/PageHome/PageHome";
 
+// Search Page
+import PageSearch from "../containers/PageSearch/PageSearch";
+
 //  Detail page
 import PageDetail from "../containers/PageDetail/PageDetail";
 
@@ -47,6 +50,8 @@ export const pages = [
   { path: "/", component: PageHome },
 
   { path: "/detail", component: PageDetail },
+
+  { path: "/search", component: PageSearch },
   
   { path: "/signin", component: PageSignIn },
   { path: "/signup", component: PageSignUp },
@@ -72,7 +77,7 @@ const MyRoutes = () => {
   const location = useLocation();
 
   const pathsToHideheader = ['/signin', '/signup', '/signotp'];
-  const pathsToHidefooter = ['/signin', '/signup', '/signotp', '/account', '/wallet', '/bankaccount', '/notifications' ];
+  const pathsToHidefooter = ['/signin', '/signup', '/signotp', '/search', '/account', '/wallet', '/bankaccount', '/notifications' ];
   const hideheader = pathsToHideheader.includes(location.pathname);
   const hidefooter = pathsToHidefooter.includes(location.pathname);
 

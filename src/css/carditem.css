@@ -85,14 +85,11 @@
 }
 
 
-
-
 @media screen and (max-width:1200px) {
     .listitems-row .card-outer-bx{
         width: 20%;
     }
 }
-
 
 @media screen and (max-width:992px) {
     .listitems-row .card-outer-bx{

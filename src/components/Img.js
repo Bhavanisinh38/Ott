@@ -57,6 +57,14 @@ import demoname_img2 from '../img/demo/demoname-(2).png';
 import demoname_img3 from '../img/demo/demoname-(3).png';
 import demoname_img4 from '../img/demo/demoname-(4).png';
 
+import demosmall_img1 from '../img/demo/demosmall(1).webp';
+import demosmall_img2 from '../img/demo/demosmall(2).webp';
+import demosmall_img3 from '../img/demo/demosmall(3).webp';
+import demosmall_img4 from '../img/demo/demosmall(4).webp';
+import demosmall_img5 from '../img/demo/demosmall(5).webp';
+import demosmall_img6 from '../img/demo/demosmall(6).webp';
+import demosmall_img7 from '../img/demo/demosmall(7).webp';
+
 // Demo Video
 import demo_video from '../img/demo/demo-video.mp4';
 
@@ -80,6 +88,7 @@ export {
     company, email, phone, location,
     demo_img1, demo_img2, demo_img3, demo_img4, demo_img5, demo_img6, demo_img7,
     demoname_img1, demoname_img2, demoname_img3, demoname_img4,
+    demosmall_img1, demosmall_img2, demosmall_img3, demosmall_img4, demosmall_img5, demosmall_img6, demosmall_img7,
     demobig_img1, demobig_img2, demobig_img3, demobig_img4,
     demo_video,
     patent1,

@@ -332,7 +332,6 @@
         opacity: 0;
         visibility: hidden;
         margin-top: 0;
-        box-shadow: rgba(0, 0, 0, 0.01) 0px 207px 58px, rgba(0, 0, 0, 0.08) 0px 132px 53px, rgba(0, 0, 0, 0.27) 0px 74px 45px, rgba(0, 0, 0, 0.45) 0px 33px 33px, rgba(0, 0, 0, 0.52) 0px 8px 18px, rgba(0, 0, 0, 0.53) 0px 0px 0px, rgba(255, 255, 255, 0.08) 0px 1px 1px inset, rgba(0, 0, 0, 0.25) 0px 0px 0px 1px inset;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     }
 

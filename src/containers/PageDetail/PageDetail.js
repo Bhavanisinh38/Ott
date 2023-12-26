@@ -7,8 +7,8 @@ import * as Img from '../../components/Img';
 
 // Design Files
 import Mainvideoplayer from '../SingleItem/Mainvideoplayer';
+import Card from '../SingleItem/Cardtem';
 import Listitemslidertwo from '../Sections/Listitemslidertwo';
-import Listitem from '../Sections/Listitem';
 
 
 export default function PageDetail() {
@@ -42,9 +42,71 @@ export default function PageDetail() {
       {/* Related Shows */}
       <Listitemslidertwo sectiontitle="Related Shows"/>
 
-      {/* Related Shows */}
-      <Listitem sectiontitle="Related Shows"/>
+      {/* Recommended */}
+      <section className="pt-5">
+          <div className="container-lg cl-custom cl-relative">
+            <div className="section-heading">Recommended</div>
+            <div className="listitems-row ci-two mt-2">
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img1}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img2}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img3}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img4}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img5}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img6}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img7}/>
+              </div>
 
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img1}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img2}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img3}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img4}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img5}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img6}/>
+              </div>
+            
+              <div className="card-outer-bx">
+                <Card src={Img.demosmall_img7}/>
+              </div>
+
+            </div>
+          </div>
+      </section>
 
       <div className="pt-5"></div>
     </>
