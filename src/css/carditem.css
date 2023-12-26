@@ -95,6 +95,10 @@
     .listitems-row .card-outer-bx{
         width: 25%;
     }
+
+    .Listitemslider.ci-two .slick-arrow{
+        height: 35px;
+    }
 }
 
 @media screen and (max-width:768px) {

@@ -512,6 +512,10 @@
 
 /* --- */
 
+.spage-r-list-row{
+    padding: 0 12px;
+}
+
 @media (min-width: 1200px){
     .spage-right .card-outer-bx {
         width: 14.28%;

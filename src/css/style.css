@@ -153,6 +153,10 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+body.overflowhidden{
+    overflow: hidden;
+}
+
 
 /* --- main-wrapper --- */
 .main-wrapper{
@@ -873,6 +877,23 @@ body{
     line-height: normal;
 }
 
+@media screen and (max-width:992px) {
+
+    .viewallbtn{
+        position: relative;
+        margin: 15px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .section-heading{
+        font-size: 16px;
+    }
+
+}
+
 /* --- Silke Slider Btn Css Start --- */
 .slick-arrow{
     width: 40px;
@@ -1248,10 +1269,6 @@ body{
         padding: 0;
     }
 
-    .viewallbtn{
-        position: relative;
-        margin: 20px 10px 0px;
-    }
 }
 
 @media screen and (max-width:768px) {

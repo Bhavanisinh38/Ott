@@ -8,7 +8,7 @@ import * as Img from '../../components/Img';
 // Design Files
 import Mainvideoplayer from '../SingleItem/Mainvideoplayer';
 import Card from '../SingleItem/Cardtem';
-import Listitemslidertwo from '../Sections/Listitemslidertwo';
+import Listitemslidertwo from '../Sliders/Listitemslidertwo';
 
 
 export default function PageDetail() {
@@ -108,7 +108,7 @@ export default function PageDetail() {
           </div>
       </section>
 
-      <div className="pt-5"></div>
+      <div className="pt-5 pb-4"></div>
     </>
   );
 };

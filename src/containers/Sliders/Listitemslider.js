@@ -15,7 +15,7 @@ export default function Listitemslider(props) {
     infinite: false,
     slidesToShow: 7,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     swipeToSlide: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -36,21 +36,21 @@ export default function Listitemslider(props) {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4.1,
+          slidesToShow: 4,
           autoplay: false,
         }
       },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 3.1,
+          slidesToShow: 3,
           autoplay: false,
         }
       },
       {
         breakpoint: 360,
         settings: {
-          slidesToShow: 2.1,
+          slidesToShow: 2,
           autoplay: false,
         }
       }

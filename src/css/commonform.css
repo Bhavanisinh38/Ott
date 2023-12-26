@@ -649,6 +649,6 @@ Error Input color css
 
 @media (max-width:576px) {
     .signinup-group-nots{
-        background: var(--color2-200);
+        background: var(--color10);
     }
 }

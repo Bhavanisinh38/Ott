@@ -15,7 +15,7 @@ export default function Listitemslider(props) {
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     swipeToSlide: true,
     speed: 500,
     autoplaySpeed: 3000,

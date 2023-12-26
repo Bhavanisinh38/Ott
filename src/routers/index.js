@@ -11,7 +11,7 @@ import Header from "../components/Header/Header";
 // Home Page
 import PageHome from "../containers/PageHome/PageHome";
 
-// Search Page
+// Search & Category Page
 import PageSearch from "../containers/PageSearch/PageSearch";
 
 //  Detail page
@@ -47,28 +47,38 @@ import Footer from "../components/Footer/Footer";
 
 
 export const pages = [
+
+  // Home Page
   { path: "/", component: PageHome },
 
+  // Search & Category Page
+  { path: "/search", component: PageSearch },
+  { path: "/category", component: PageSearch },
+
+  //  Detail page
   { path: "/detail", component: PageDetail },
 
-  { path: "/search", component: PageSearch },
-  
+  // Signinup Pages
   { path: "/signin", component: PageSignIn },
   { path: "/signup", component: PageSignUp },
   { path: "/signotp", component: PageSignOtp },
 
+  // Accout Pages
   { path: "/account", component: PageAccount },
   { path: "/wallet", component: PageWallet },
   { path: "/bankaccount", component: PageBankaccount },
   { path: "/notifications", component: PageNotifications },
 
+  // Lagle Pages
   { path: "/about", component: PageAbout },
   { path: "/faqs", component: PageFaqs },
   { path: "/privacy", component: PagePrivacy },
   { path: "/terms", component: PageTerms },
 
+  // Contact Page
   { path: "/contact", component: PageContact },
 
+  // Sitemap page
   { path: "/sitemap", component: PageSitemap },
 ];
 

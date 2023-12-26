@@ -9,11 +9,10 @@ import '../../css/search.css'
 // Design Files
 import Card from '../SingleItem/Cardtem';
 
-
 // Images Common File
 import * as Img from '../../components/Img';
 
-function Search() {
+export default function Search() {
     const [isFilter, setIsFilter] = useState(false);
     const [isSort, setIsSort] = useState(false);
 
@@ -300,4 +299,3 @@ function Search() {
         </>
     )
 }
-export default Search;

@@ -1,0 +1,125 @@
+.searchbar-main-bx{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--color1-900);
+    z-index: 1200;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchbar-main-bx.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.searchbar-main-bx .searchbar-inner{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s 0.3s ease-in-out;
+}
+
+
+.searchbar-main-bx.active .searchbar-inner{
+    opacity: 1;
+    visibility: visible;
+}
+
+.searchbar-group input{
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    padding: 15px;
+}
+
+.searchbar-group.sgli input{
+    padding-left: 60px;
+}
+
+.searchbar-group.sgri input{
+    padding-right: 60px;
+}
+
+.searchbar-group .searchbar_icon{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+}
+
+.searchbar-group .searchbar_icon.searchbar_left_icon{
+    left: 0;
+    padding: 15px;
+}
+
+.searchbar-group .searchbar_icon.searchbar_right_icon{
+    right: 0;
+    padding: 15px;
+}
+
+.searchbar-tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.searchbar-tags > *{
+    cursor: pointer;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color4);
+    border: 1px solid var(--color4-200);
+    background-color: var(--color10);
+    transition: all 0.3s ease-in-out;
+}
+
+.searchbar-tags > *:hover{
+    color: var(--white);
+    border-color: var(--color2);
+    background-color: var(--color2);
+}
+
+.searchbar-category-item{
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.searchbar-category-item img{
+    width: 100%;
+}
+
+.searchbar-category-item .sci-text{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--black-400);
+    text-shadow: 2px 2px 5px var(--black);
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.searchbar-category-item:hover .sci-text{
+    background-color: var(--black-100);
+}
