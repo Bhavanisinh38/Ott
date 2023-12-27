@@ -63,6 +63,7 @@ export default function Listitemslider(props) {
           <div className="container-lg cl-custom cl-relative">
             <div className="section-heading">{props.sectiontitle}</div>
             <Slider className={`slick-hover Listitemslider mt-2`} {...Listitemslider}>
+              <Card src={Img.demo_img8}/>
               <Card src={Img.demo_img1}/>
               <Card src={Img.demo_img2}/>
               <Card src={Img.demo_img3}/>
@@ -70,6 +71,7 @@ export default function Listitemslider(props) {
               <Card src={Img.demo_img5}/>
               <Card src={Img.demo_img6}/>
               <Card src={Img.demo_img7}/>
+              <Card src={Img.demo_img8}/>
               <Card src={Img.demo_img1}/>
               <Card src={Img.demo_img2}/>
               <Card src={Img.demo_img3}/>

@@ -28,6 +28,7 @@ export default function Mainbanner() {
         <section>
           <div className="container-lg cl-custom p-0">
             <Slider className="mainbannerslider" {...Mainbannerslider}>
+                <Mainbanneritem src={Img.demobig_img5} srcvideo={Img.demo_video} srcname={Img.demoname_img5} name={"Animal"} tags={"Hindi | Romance, Comedy, Action"} desc={"Animal is a 2023 Indian Hindi-language action drama film directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta."}/>
                 <Mainbanneritem src={Img.demobig_img1} srcvideo={Img.demo_video} srcname={Img.demoname_img1} name={"Bleeding Steel"} tags={"Gujarati | Romance, Comedy, Web Series"} desc={"Maulik and Meera's madness continues and we see them stepping out to juggle between themselves and the world."}/>
                 <Mainbanneritem src={Img.demobig_img2} srcvideo={Img.demo_video} srcname={Img.demoname_img2} name={"Monster Hunt 2"} tags={"Gujarati | Romance, Comedy, Web Series"} desc={"Maulik and Meera's madness continues and we see them stepping out to juggle between themselves and the world."}/>
                 <Mainbanneritem src={Img.demobig_img3} srcvideo={Img.demo_video} srcname={Img.demoname_img3} name={"Chennai Central"} tags={"Gujarati | Romance, Comedy, Web Series"} desc={"Maulik and Meera's madness continues and we see them stepping out to juggle between themselves and the world."}/>

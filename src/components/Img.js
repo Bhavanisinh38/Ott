@@ -46,16 +46,19 @@ import demo_img4 from '../img/demo/demo-(4).webp';
 import demo_img5 from '../img/demo/demo-(5).webp';
 import demo_img6 from '../img/demo/demo-(6).webp';
 import demo_img7 from '../img/demo/demo-(7).webp';
+import demo_img8 from '../img/demo/demo-(8).webp';
 
 import demobig_img1 from '../img/demo/demobig-(1).webp';
 import demobig_img2 from '../img/demo/demobig-(2).webp';
 import demobig_img3 from '../img/demo/demobig-(3).webp';
 import demobig_img4 from '../img/demo/demobig-(4).webp';
+import demobig_img5 from '../img/demo/demobig-(5).webp';
 
 import demoname_img1 from '../img/demo/demoname-(1).png';
 import demoname_img2 from '../img/demo/demoname-(2).png';
 import demoname_img3 from '../img/demo/demoname-(3).png';
 import demoname_img4 from '../img/demo/demoname-(4).png';
+import demoname_img5 from '../img/demo/demoname-(5).png';
 
 import demosmall_img1 from '../img/demo/demosmall(1).webp';
 import demosmall_img2 from '../img/demo/demosmall(2).webp';
@@ -86,10 +89,10 @@ export {
     appdemo,
     hiw1, hiw2, hiw3,
     company, email, phone, location,
-    demo_img1, demo_img2, demo_img3, demo_img4, demo_img5, demo_img6, demo_img7,
-    demoname_img1, demoname_img2, demoname_img3, demoname_img4,
+    demo_img1, demo_img2, demo_img3, demo_img4, demo_img5, demo_img6, demo_img7, demo_img8,
+    demoname_img1, demoname_img2, demoname_img3, demoname_img4, demoname_img5,
     demosmall_img1, demosmall_img2, demosmall_img3, demosmall_img4, demosmall_img5, demosmall_img6, demosmall_img7,
-    demobig_img1, demobig_img2, demobig_img3, demobig_img4,
+    demobig_img1, demobig_img2, demobig_img3, demobig_img4, demobig_img5,
     demo_video,
     patent1,
     Payment_icon1, Payment_icon2, Payment_icon3, Payment_icon4, Payment_icon5
