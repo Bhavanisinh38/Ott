@@ -8,7 +8,7 @@ export default function Mainbanneritem(props) {
 
     return(
         <>
-            <Link className="mainbanneritem-link">
+            <Link to="/detail" className="mainbanneritem-link">
                 <div className="mbi-video-img-bx">
                     {/* <img className="mbi-img" src={props.src} alt="Title Name" /> */}
 

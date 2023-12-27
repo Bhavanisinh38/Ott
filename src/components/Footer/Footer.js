@@ -54,7 +54,7 @@ export default function Footer() {
                             </form>
                         </div>
                         
-                        <div className="footer-heading text-center text-lg-left mt-4">Social media</div>
+                        <div className="footer-heading text-center text-lg-start mt-4">Social media</div>
                         <Socialicon className="social-icon justify-content-lg-start" />
                     </div>
 

@@ -70,10 +70,10 @@ export default function Sidemenu() {
 
                     <ul className="pb-0">
                         <div className="smb-nav-lable mt-3 mb-2">Categories</div>
-                        <li><div className="smb-link">Web Shows</div></li>
-                        <li><div className="smb-link">Movies</div></li>
-                        <li><div className="smb-link">New & hot🔥</div></li>
-                        <li><div className="smb-link">Distro Tv</div></li>
+                        <li><Link to="/category" className="smb-link">Web Shows</Link></li>
+                        <li><Link to="/category" className="smb-link">Movies</Link></li>
+                        <li><Link to="/category" className="smb-link">New & hot🔥</Link></li>
+                        <li><Link to="/category" className="smb-link">Distro Tv</Link></li>
                     </ul>
 
                     <ul>

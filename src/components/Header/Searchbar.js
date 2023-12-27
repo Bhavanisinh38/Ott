@@ -25,7 +25,7 @@ export default function Searchbar() {
             sciLink: "/category",
         },
         {
-            sciName: "movies",
+            sciName: "Movies",
             sciImg: movies,
             sciLink: "/category",
         },

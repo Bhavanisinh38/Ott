@@ -31,11 +31,13 @@
 /* --- Signinup header --- */
 .signinup-header{
     position: relative;
+    height: 40px;
+    margin-bottom: 25px;
 }
 
 .signinup-header .back-btn{
     left: 0;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 
@@ -261,7 +263,7 @@ Seconde Screen
 
 @media screen and (max-width:450px) {
     .signinup-screen{
-       padding: 15px 5px;
+       padding: 15px 0px;
        padding-top: 25px;
     }
 

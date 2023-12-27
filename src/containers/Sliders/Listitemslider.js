@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 // Slider Code
 import Slider from 'react-slick';
@@ -77,7 +78,7 @@ export default function Listitemslider(props) {
               <Card src={Img.demo_img6}/>
               <Card src={Img.demo_img7}/>
             </Slider>
-            <div className="viewallbtn">View All<i className="fa fa-angle-right"></i></div>
+            <Link to="/category" className="viewallbtn">View All<i className="fa fa-angle-right"></i></Link>
           </div>
       </section>
     </>

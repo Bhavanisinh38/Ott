@@ -8,7 +8,7 @@ export default function Carditem(props) {
 
     return(
         <>
-        <Link to="/" className="card-item">
+        <Link to="/detail" className="card-item">
             <div className="card-img-bx">
                 <img className="card-img" src={props.src} alt="Card Name" />
             </div>

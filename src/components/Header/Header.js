@@ -78,11 +78,11 @@ export default function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <Link to="/" className="cdi-main-item">Comedy</Link>
-                    <Link to="/detail" className="cdi-main-item">Reality TV</Link>
-                    <Link to="/" className="cdi-main-item">Crime</Link>
-                    <Link to="/" className="cdi-main-item">Turkish TV</Link>
-                    <Link to="/" className="cdi-main-item">Drama</Link>
+                    <Link to="/category" className="cdi-main-item">Comedy</Link>
+                    <Link to="/category" className="cdi-main-item">Reality TV</Link>
+                    <Link to="/category" className="cdi-main-item">Crime</Link>
+                    <Link to="/category" className="cdi-main-item">Turkish TV</Link>
+                    <Link to="/category" className="cdi-main-item">Drama</Link>
                   </div>
                 </div>
               </div>
@@ -94,11 +94,11 @@ export default function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <Link to="/" className="cdi-main-item">Comedy</Link>
-                    <Link to="/" className="cdi-main-item">Reality TV</Link>
-                    <Link to="/" className="cdi-main-item">Crime</Link>
-                    <Link to="/" className="cdi-main-item">Turkish TV</Link>
-                    <Link to="/" className="cdi-main-item">Drama</Link>
+                    <Link to="/category" className="cdi-main-item">Comedy</Link>
+                    <Link to="/category" className="cdi-main-item">Reality TV</Link>
+                    <Link to="/category" className="cdi-main-item">Crime</Link>
+                    <Link to="/category" className="cdi-main-item">Turkish TV</Link>
+                    <Link to="/category" className="cdi-main-item">Drama</Link>
                   </div>
                 </div>
               </div>
@@ -110,11 +110,11 @@ export default function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <Link to="/" className="cdi-main-item">Comedy</Link>
-                    <Link to="/" className="cdi-main-item">Reality TV</Link>
-                    <Link to="/" className="cdi-main-item">Crime</Link>
-                    <Link to="/" className="cdi-main-item">Turkish TV</Link>
-                    <Link to="/" className="cdi-main-item">Drama</Link>
+                    <Link to="/category" className="cdi-main-item">Comedy</Link>
+                    <Link to="/category" className="cdi-main-item">Reality TV</Link>
+                    <Link to="/category" className="cdi-main-item">Crime</Link>
+                    <Link to="/category" className="cdi-main-item">Turkish TV</Link>
+                    <Link to="/category" className="cdi-main-item">Drama</Link>
                   </div>
                 </div>
               </div>
@@ -126,11 +126,11 @@ export default function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <Link to="/" className="cdi-main-item">Comedy</Link>
-                    <Link to="/" className="cdi-main-item">Reality TV</Link>
-                    <Link to="/" className="cdi-main-item">Crime</Link>
-                    <Link to="/" className="cdi-main-item">Turkish TV</Link>
-                    <Link to="/" className="cdi-main-item">Drama</Link>
+                    <Link to="/category" className="cdi-main-item">Comedy</Link>
+                    <Link to="/category" className="cdi-main-item">Reality TV</Link>
+                    <Link to="/category" className="cdi-main-item">Crime</Link>
+                    <Link to="/category" className="cdi-main-item">Turkish TV</Link>
+                    <Link to="/category" className="cdi-main-item">Drama</Link>
                   </div>
                 </div>
               </div>
@@ -142,8 +142,8 @@ export default function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <Link to="/" className="cdi-main-item">Gold ⭐️</Link>
-                    <Link to="/" className="cdi-main-item">Trailers</Link>
+                    <Link to="/category" className="cdi-main-item">Gold ⭐️</Link>
+                    <Link to="/category" className="cdi-main-item">Trailers</Link>
                   </div>
                 </div>
               </div>

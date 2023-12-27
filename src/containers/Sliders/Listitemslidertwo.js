@@ -68,7 +68,7 @@ export default function Listitemslider(props) {
               <Card src={Img.demobig_img3} cno="Romance, Hindi, 2019"/>
               <Card src={Img.demobig_img4} cno="Romance, Hindi, 2019"/>
             </Slider>
-            <div className="viewallbtn">View All<i className="fa fa-angle-right"></i></div>
+            {/* <div className="viewallbtn">View All<i className="fa fa-angle-right"></i></div> */}
           </div>
       </section>
     </>

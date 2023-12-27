@@ -516,7 +516,7 @@
     padding: 0 12px;
 }
 
-@media (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .spage-right .card-outer-bx {
         width: 14.28%;
         transition: flex 0.3s ease;
@@ -525,6 +525,18 @@
     .spage-right.active .card-outer-bx {
         width: 16.66%;
         transition: flex 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .spage-r-list-row.listitems-row .card-outer-bx{
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .spage-r-list-row.listitems-row .card-outer-bx{
+        width: 50%;
     }
 }
 
