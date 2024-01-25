@@ -16,9 +16,11 @@ export default function Mainvideoplayer({mainvideosrc, mainposter}) {
               <span>Back</span>
             </div> */}
 
-            <video poster={mainposter} className="main-video" autoPlay preload="true" controls disablePictureInPicture controlsList="nopictureinpicture nodownload noremoteplayback noplaybackrate" >
+            {/* <video poster={mainposter} className="main-video" autoPlay preload="true" controls disablePictureInPicture controlsList="nopictureinpicture nodownload noremoteplayback noplaybackrate" >
               <source src={mainvideosrc} type="video/mp4" />
-            </video>
+            </video> */}
+
+            <iframe className="main-video" src="https://www.youtube.com/embed/8JMMjCyyznI" title=" " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </>
